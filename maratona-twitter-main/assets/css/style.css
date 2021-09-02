@@ -1,0 +1,172 @@
+/* CSS - Cascading StyleSheet(Folha de estilo em cascata)
+
+Estrutura
+
+Regra CSS:
+seletor - quem vai ser estilizado {
+    propriedade: valor; - estilo que quero adicionar
+}
+
+CSS BEM
+
+B - Bloco
+E - Elemento
+M - Modificador
+
+font-family: 'Roboto', sans-serif;
+
+
+*/
+
+/*
+.cabecalho{
+    background-color:rgb(29, 28, 28);
+}
+*/
+
+
+@font-face {
+    font-family: 'stempel_garamondregular';
+    src: url('stempel_garamond_roman_area_font-webfont.woff2') format('woff2'),
+         url('stempel_garamond_roman_area_font-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+
+    font-family: 'optimusprincepssemiboldRg';
+    src: url('optimusprincepssemibold-webfont.woff2') format('woff2'),
+         url('optimusprincepssemibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* BODY */
+body{
+    font-family: 'stempel_garamondregular';
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left: 100px;
+    display: flex;
+
+    /* 
+    margin-top: 50px;
+    margin-bottom: ;
+    margin-left: ;
+    margin-right: ;
+    margin: top right bottom left; (relógio)
+    margi: top right/left bottom;
+    margi: top/bottom left/right;
+    margi: todos os lados; 
+    */
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    flex-basis: 30%;
+}
+.cabecalho__logo{
+    margin-bottom: 50px;
+}
+.cabecalho__logo img{}
+.cabecalho__logo figcaption{
+    display: none; /*esconde o elemento*/
+}
+
+.cabecalho__menuNavegacao{}
+.cabecalho__menuLista{}
+.cabecalho__menuItem{
+    margin-bottom: 25px;
+    font-weight: 700;
+ 
+}
+.cabecalho__menuItem img{
+    max-width: 30px;
+}
+.cabecalho__menuItem__perfil img{
+    max-width: 50px;
+}
+.cabecalho__menuItem__perfil a{
+    color:chocolate;
+    text-decoration: none;
+    font-size: 20px;
+    vertical-align: top;
+    font-weight: 900;
+}
+.cabecalho__menuItem a{
+    color:chocolate;
+    text-decoration: none;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+/* CONTEUDO PRINCIPAL */
+.conteudoPrincipal{
+    flex-basis: 70%;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.conteudoPrincipal__titulo{
+    padding: 10px 30px;
+    font-weight: 900;
+}
+
+.conteudoPrincipal__formulario{
+    padding: 10px 30px;
+    border-top: 1px solid #ddd;
+    border-bottom: 10px solid #ddd;
+    text-align: right;
+}
+.conteudoPrincipal__formulario textarea{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    height: 55px
+}
+.conteudoPrincipal__formulario button{
+    background-color: darkorange;
+    border: none;
+    padding: 8px 20px;
+    color: black;
+    border-radius: 20px;
+    font-family: 'optimusprincepssemiboldRg';
+}
+}
+
+.conteudoPrincipal__feed{}
+.conteudoPrincipal__listaTweets{
+    display: flex;
+    flex-flow: column-reverse nowrap;
+}
+.conteudoPrincipal__tweet{
+    padding: 20px 32px;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.tweet__fotoPerfil{}
+.tweet__conteudo{
+    margin-left: 15px;
+}
+.tweet__conteudo h2{
+    display: inline-block;
+}
+.tweet__conteudo span{
+    display: inline-block;
+    color:#828282
+}
+.tweet__conteudo p{
+    margin-top: 15px;
+    color: #333333
+}
+
+parei em 4:18:07 /\ color #333333.
+
